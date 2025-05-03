@@ -151,7 +151,7 @@ export default function Portfolio() {
 
     {/* Experience 2 */}
     <div className="bg-white shadow-lg rounded-lg p-6 space-y-4">
-      <h3 className="text-2xl font-semibold">Student Intern</h3>
+      <h3 className="text-2xl font-semibold">MCA Final Year Internship Trainee</h3>
       <p className="text-lg text-gray-600">
         <strong>January 2024 to April 2024 | eFloz IT Services</strong><br />
         B58/1, 2nd Cross,
@@ -274,7 +274,7 @@ export default function Portfolio() {
       className="bg-gray-100 rounded-lg shadow-md p-5 hover:shadow-lg transition block"
     >
       <h3 className="text-lg font-semibold mb-2 text-[#301934]">MovieApp</h3>
-      <p className="text-gray-700 mb-4">A simple task management app developed with React and local storage.</p>
+      <p className="text-gray-700 mb-4 text-justify">Built a movie app using React.js and integrated the TMDb API to display real-time movie data with a clean, responsive interface</p>
       <span className="text-dark-600 hover:underline inline-flex items-center gap-1">
   Check it Out
   <svg
