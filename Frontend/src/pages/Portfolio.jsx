@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGmail,SiExpress, SiMysql, SiGooglecloud, SiDocker,SiWhatsapp,SiLinkedin } from "react-icons/si";
-import Balaji from '../assets/Balaji.jfif'
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGmail,SiExpress, SiMysql, SiGooglecloud, SiDocker,SiWhatsapp,SiLinkedin, SiNodedotjs, SiAmazon } from "react-icons/si";
+import Balaji from '../assets/Balajisundar.jfif'
 export default function Portfolio() {
   // const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   // const [status, setStatus] = useState("");
@@ -10,14 +10,16 @@ export default function Portfolio() {
   // };
 
   const technologies = [
-    { name: "HTML", icon: <SiHtml5 /> },
-    { name: "CSS", icon: <SiCss3 /> },
-    { name: "JavaScript", icon: <SiJavascript /> },
+  
+  
     { name: "React.js", icon: <SiReact /> },
     { name: "Express.js", icon: <SiExpress /> },
+     { name: "Node.js", icon: <SiNodedotjs /> },
     { name: "MySQL", icon: <SiMysql /> },
-    { name: "Google Cloud", icon: <SiGooglecloud /> },
+    { name: "Google Cloud Compute Engine", icon: <SiGooglecloud /> },
+      { name: "Google Cloud App Engine", icon: <SiGooglecloud /> },
     { name: "Docker", icon: <SiDocker /> },
+       { name: "AWS", icon: <SiAmazon /> },
   ];
 
   // const handleSubmit = async (e) => {
@@ -82,7 +84,7 @@ export default function Portfolio() {
         <a href="#languageskills" className="hover:text-sky-600 transition duration-300">Language Skills</a>
         <a href="#organizationalprojects" className="hover:text-sky-600 transition duration-300">Organizational Projects</a>
         <a href="#capstoneprojects" className="hover:text-sky-600 transition duration-300">Capstone Projects</a>
-        <a href="#contact" className="hover:text-sky-600 transition duration-300">Hire Me</a>
+        <a href="#contact" className="hover:text-sky-600 transition duration-300">Let’s Work Together</a>
       </div>
     </div>
 
@@ -97,7 +99,7 @@ export default function Portfolio() {
         <a href="#languageskills" className="py-2 hover:text-sky-600 transition-colors">Language Skills</a>
         <a href="#organizationalprojects" className="py-2 hover:text-sky-600 transition-colors">Organizational Projects</a>
         <a href="#capstoneprojects" className="py-2 hover:text-sky-600 transition-colors">Capstone Projects</a>
-        <a href="#contact" className="py-2 hover:text-sky-600 transition-colors">Hire Me</a>
+        <a href="#contact" className="py-2 hover:text-sky-600 transition-colors">Let’s Work Together</a>
       </nav>
     </div>
   </nav>
@@ -112,7 +114,8 @@ export default function Portfolio() {
     {/* Left Column (Shown second on mobile): About Me Text */}
     <div className="flex-1 text-center md:text-justify">
       <p className="text-lg">
-      I'm Balaji P, a passionate full-stack web developer with experience in building scalable and performance-driven web applications. I specialize in React.js, Express.js, and MySQL, focusing on delivering dynamic user interfaces and efficient backend systems. My deployment expertise on Google Cloud Platform (GCP) using Compute Engine and App Engine ensures secure and reliable application delivery.
+   I’m Balaji P, a passionate Full Stack & Cloud Developer with expertise in building scalable, high-performance web applications using React.js, Express.js, and MySQL, and deploying them securely on AWS and GCP.
+   Skilled in designing and implementing role-based access systems, developing APIs, and managing production-level cloud deployments. Experienced in configuring VPCs, Load Balancers, Private Subnets, and RDS, optimizing cloud costs, and ensuring reliable, secure, and efficient application delivery across multiple platforms.
       </p>
     </div>
 
@@ -170,36 +173,6 @@ export default function Portfolio() {
 </section>
 
 
-{/* Educational Qualification */}
-
-<section id="educationalqualification" className="p-8 bg-gray-100">
-  <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">Academic Qualifications</h2>
-
-  <div className="max-w-6xl mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-2">
-    {/* Experience 1 */}
-    <div className="bg-white shadow-lg rounded-lg p-6 space-y-3">
-  <h3 className="text-2xl font-semibold">Postgraduate – Master of Computer Applications</h3>
-  <p className="text-lg text-gray-600">
-    <span className="font-semibold">St. Xavier's College, Palayamkottai – 627002</span><br />
-    <span className="font-medium">July 2022 – April 2024</span><br />
-    CGPA: 7.59
-  </p>
-</div>
-
-
-
-        {/* Experience 2 */}
-        <div className="bg-white shadow-lg rounded-lg p-6 space-y-3">
-  <h3 className="text-2xl font-semibold">Undergraduate – B.Sc. Computer Science</h3>
-  <p className="text-lg text-gray-600">
-    <span className="font-semibold">Karpagam Academy of Higher Education</span><br />
-    <span className="font-medium">June 2019 – April 2022</span><br />
-    CGPA: 8.69
-  </p>
-</div>
-  </div>
-</section>
-
       {/* Languages Known Section */}
       <section id="languageskills" className="p-6 sm:p-8 ">
   <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-center sm:text-center">Language Skills</h2>
@@ -226,7 +199,8 @@ export default function Portfolio() {
     </div>
   </div>
 </section>
-      {/* Projects Section */}
+
+ {/* Projects Section */}
       <section id="organizationalprojects" className="p-6 sm:p-8 bg-white">
   <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center sm:text-center">Organizational Projects</h2>
 
@@ -260,10 +234,56 @@ export default function Portfolio() {
     </div>
   </div>
 </section>
+
+{/* Professional Achievements */}
+
+<section id="educationalqualification" className="p-8 bg-gray-100">
+  <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">Professional Achievements</h2>
+
+  <div className="max-w-6xl mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+    {/* Experience 1 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 space-y-3">
+ 
+  <p className="text-lg text-gray-600">
+    <span className="font-semibold">Awarded Best Performer of the Month (October 2025) for
+outstanding contribution to project deliverables.
+
+</span><br />
+  
+  
+  </p>
+</div>
+
+    <div className="bg-white shadow-lg rounded-lg p-6 space-y-3">
+ 
+  <p className="text-lg text-gray-600">
+    <span className="font-semibold">Optimized Google Cloud Platform (GCP) Compute Engine costs,
+reducing monthly infrastructure expenses and improving
+efficiency
+
+</span><br />
+  
+  
+  </p>
+
+</div>
+</div>
+
+
+
+    {/* Experience 1 */}
+
+
+
+
+</section>
+
+
   {/* capstone projects */}
 
+{/* Capstone Projects */}
 <section id="capstoneprojects" className="p-6 sm:p-8 bg-white">
-  <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center sm:text-center">Capstone Projects</h2>
+  <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">Capstone Projects</h2>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {/* Project 1 */}
@@ -274,23 +294,84 @@ export default function Portfolio() {
       className="bg-gray-100 rounded-lg shadow-md p-5 hover:shadow-lg transition block"
     >
       <h3 className="text-lg font-semibold mb-2 text-[#301934]">MovieApp</h3>
-      <p className="text-gray-700 mb-4 text-justify">Built a movie app using React.js and integrated the TMDb API to display real-time movie data with a clean, responsive interface</p>
+      <p className="text-gray-700 mb-4 text-justify">
+        Built a movie app using React.js and integrated the TMDb API to display real-time movie data
+        with a clean, responsive interface.
+      </p>
       <span className="text-dark-600 hover:underline inline-flex items-center gap-1">
-  Check it Out
-  <svg
-    className="w-4 h-4"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-  </svg>
-</span>
+        Check it Out
+        <svg
+          className="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
     </a>
+
+    {/* Project 2 (no link) */}
+    <div className="bg-gray-100 rounded-lg shadow-md p-5 transition block">
+      <h3 className="text-lg font-semibold mb-2 text-[#301934]">
+        Three-Tier Web Application Deployment on AWS
+      </h3>
+   <ul className="text-gray-700 mb-4 list-disc list-inside">
+  <li>Designed and deployed a production-ready <strong>three-tier architecture</strong> on AWS VPC with 6 subnets (Web, App, DB) across multiple Availability Zones.</li>
+  <li>Configured Internet Gateway, NAT Gateways, custom Route Tables, and 5 Security Groups following least-privilege principles.</li>
+  <li>Deployed a Flask backend on private EC2 instances with RDS MySQL in isolated subnets and Apache Web Server on a public EC2.</li>
+  <li>Configured Application Load Balancers for frontend and backend with health checks, routing, and secure communication.</li>
+  <li>Achieved full stack connectivity: Web → ALB → App → RDS, validating an enterprise-grade architecture.</li>
+  <li>Gained hands-on experience in <strong>VPC networking, subnet design, security, Linux server setup</strong>, and <strong>cloud deployment</strong>.</li>
+</ul>
+
+    </div>
   </div>
 </section>
+
+
+
+
+{/* Educational Qualification */}
+
+<section id="educationalqualification" className="p-8 bg-gray-100">
+  <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">Academic Qualifications</h2>
+
+  <div className="max-w-6xl mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+    {/* Experience 1 */}
+    <div className="bg-white shadow-lg rounded-lg p-6 space-y-3">
+  <h3 className="text-2xl font-semibold">Postgraduate – Master of Computer Applications</h3>
+  <p className="text-lg text-gray-600">
+    <span className="font-semibold">St. Xavier's College, Palayamkottai – 627002</span><br />
+    <span className="font-medium">July 2022 – April 2024</span><br />
+    CGPA: 7.59
+  </p>
+</div>
+
+
+
+        {/* Experience 2 */}
+        <div className="bg-white shadow-lg rounded-lg p-6 space-y-3">
+  <h3 className="text-2xl font-semibold">Undergraduate – B.Sc. Computer Science</h3>
+  <p className="text-lg text-gray-600">
+    <span className="font-semibold">Karpagam Academy of Higher Education</span><br />
+    <span className="font-medium">June 2019 – April 2022</span><br />
+    CGPA: 8.69
+  </p>
+</div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
       {/* Get in Touch Section */}
       {/* <section id="contact" className="p-8 bg-gray-100 flex justify-center items-center">
   <div className="w-full max-w-md">
