@@ -177,7 +177,7 @@ export default function Portfolio() {
       <section id="languageskills" className="p-6 sm:p-8 ">
   <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-center sm:text-center">Language Skills</h2>
 
-  {/* Mobile & iPad: Grid */}
+  {/* Mobile & iPad Grid */}
   <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:hidden">
     {technologies.map((tech) => (
       <div key={tech.name} className="flex flex-col items-center bg-gray-100 text-dark p-3 rounded shadow">
