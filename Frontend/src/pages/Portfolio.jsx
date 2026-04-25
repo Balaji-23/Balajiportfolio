@@ -1318,7 +1318,7 @@ export default function Portfolio() {
       </section>
 
       {/* FOOTER */}
-      <footer id="contact" className="px-4 sm:px-6 lg:px-8 py-6 border-t border-white/10">
+      {/* <footer id="contact" className="px-4 sm:px-6 lg:px-8 py-6 border-t border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm sm:text-base">Drop Me a Message</p>
 
@@ -1328,7 +1328,58 @@ export default function Portfolio() {
             <SiGmail />
           </div>
         </div>
-      </footer>
+      </footer> */}
+    <footer id="contact" className="bg-gradient-to-r from-gray-900 to-black text-white py-10 mt-12 border-t border-sky-400/20">
+
+  <div className="max-w-6xl mx-auto px-4 flex flex-col items-center text-center gap-6">
+
+    {/* Title */}
+    <h2 className="text-xl sm:text-2xl font-bold text-sky-400">
+      Let’s Connect
+    </h2>
+
+    {/* Improved HR sentence */}
+  
+
+    {/* Social Icons */}
+    <div className="flex items-center gap-6 mt-2">
+
+      <a
+        href="https://www.linkedin.com/in/balajip23/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-3 rounded-full bg-white/5 border border-white/10 hover:border-blue-500 hover:text-blue-500 transition hover:scale-110"
+      >
+        <SiLinkedin className="w-6 h-6" />
+      </a>
+
+      <a
+        href="https://wa.me/6383387454"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-3 rounded-full bg-white/5 border border-white/10 hover:border-green-500 hover:text-green-500 transition hover:scale-110"
+      >
+        <SiWhatsapp className="w-6 h-6" />
+      </a>
+
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=balajipsundar@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-3 rounded-full bg-white/5 border border-white/10 hover:border-red-500 hover:text-red-500 transition hover:scale-110"
+      >
+        <SiGmail className="w-6 h-6" />
+      </a>
+
+    </div>
+
+    {/* Footer note */}
+    <p className="text-gray-400 text-xs mt-4">
+      Open to exploring new opportunities and collaborating on impactful projects.
+    </p>
+
+  </div>
+</footer>
     </div>
   );
 }
